@@ -1,6 +1,6 @@
 
 
-export const GifItem = ({url, title}) => {
+export const GifItem = ({url, title, id}) => {
   
       
   

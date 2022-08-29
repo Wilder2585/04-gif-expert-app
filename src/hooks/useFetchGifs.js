@@ -3,13 +3,13 @@ import { getGifs } from "../helpers/GetGift";
 
 export const useFetchGifs = (category ) => {
 
-  const [images, setimages] = useState([]);
-  const [isloading, setIsloading] = useState( true )
+  const [images, setImages] = useState([]);
+  const [isloading, setIsLoading] = useState( true )
 
   const getImages = async() => {
     const newImages = await getGifs( category );
-    setimages(newImages);
-    setIsloading(false)
+    setImages(newImages);
+    setIsLoading(false)
   }
   
   useEffect( ( ) => {
